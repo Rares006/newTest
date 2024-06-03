@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Image Grid</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial;
+    }
+
+    .header {
+      text-align: center;
+      padding: 32px;
+    }
+
+    .row {
+      display: -ms-flexbox; /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap; /* IE10 */
+      flex-wrap: wrap;
+      padding: 0 4px;
+    }
+
+    .column {
+      -ms-flex: 25%; /* IE10 */
+      flex: 25%;
+      max-width: 25%;
+      padding: 0 4px;
+    }
+
+    .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
+    }
+
+    @media screen and (max-width: 800px) {
+      .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1>Responsive Image Grid</h1>
+  <p>Resize the browser window to see the responsive effect.</p>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="photo/835B78BF-07AB-4667-A872-E32AE73A0EDD_1_105_c.jpeg" alt="Image 1">
+    <img src="photo/A9284454-B873-45B3-87E7-815201E611B0_1_105_c.jpeg" alt="Image 2">
+    <img src="photo/B8E9D5A9-2DE1-45D2-B854-5C503DD4051C_1_105_c.jpeg" alt="Image 3">
+    <img src="photo/BDEF4516-D0CC-4A7A-BF41-456A98F40125_1_105_c.jpeg" alt="Image 4">
+    <img src="photo/D99900EA-3EAB-4143-B081-4BE332CF2E84_1_105_c.jpeg" alt="Image 5">
+  </div>
+  <div class="column">
+    <img src="photo/IMG_5769.JPG" alt="Image 1">
+    <img src="photo/IMG_5770.JPG" alt="Image 2">
+    <img src="photo/IMG_5771.JPG" alt="Image 3">
+    <img src="photo/IMG_5775.JPG" alt="Image 4">
+    <img src="photo/IMG_5776.JPG" alt="Image 5">
+  </div>  
+  <div class="column">
+    <img src="photo/IMG_5777.JPG" alt="Image 1">
+    <img src="photo/IMG_5778.JPG" alt="Image 2">
+    <img src="photo/IMG_5779.JPG" alt="Image 3">
+    <img src="photo/IMG_5781.JPG" alt="Image 4">
+    <img src="photo/IMG_5782.JPG" alt="Image 5">
+  </div>
+  <div class="column">
+    <img src="photo/IMG_5783.JPG" alt="Image 1">
+    <img src="photo/IMG_5784.JPG" alt="Image 2">
+    <img src="photo/IMG_6006.jpeg" alt="Image 3">
+    <img src="photo/IMG_6007.jpeg" alt="Image 4">
+    <img src="photo/IMG_6008.jpeg" alt="Image 5">
+    <img src="photo/IMG_6022.jpeg" >
+  </div>
+</div>
+
+</body>
+</html>
